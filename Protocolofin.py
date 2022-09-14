@@ -6,7 +6,7 @@ import itertools
 def menu():
     print (". - . - . - . - . - . - . - . - . - . - . - Menu Principal . - . - . - . - . - . - . - . - . - . - . -")
     print("")
-    print("1.-  Crear protocolo")
+    print("1.- Crear protocolo")
     print("2.- Agregar instruccion")
     print("3.- Consultar el protocolo completo")
     print("4.- Eliminar una instruccion")
@@ -29,7 +29,7 @@ while True:
         protocolo.append(a)
         more = input ("Deseas escribir otra instrucciOn? s/n: ")
         if more == "s":
-            pasos = int(input("¿Cuantas instrucciones quieres incluir al protocolo?: "))
+            pasos = int(input("Cuantas instrucciones quieres incluir al protocolo?: "))
             for x in itertools.repeat(None, pasos):
                 a = input("Escriba la nueva instruccion: ")
                 protocolo.append(a)
