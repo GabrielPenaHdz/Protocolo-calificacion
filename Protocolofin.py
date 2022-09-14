@@ -15,7 +15,7 @@ def menu():
     print(". - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - . - ")
 
 protocolo = []
-inst = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+inst = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 while True:
     menu()
@@ -40,7 +40,7 @@ while True:
             print("Opcion indefinida")
             print("")
     elif opc == 4:
-        elim = int(input("Que instruccion quieres eliminar?: (escribir el número dado por la opcion 3"))
+        elim = int(input("Que instruccion quieres eliminar?: (escribir el nmero dado por la opcion 3) "))
         protocolo.pop(elim)
         print ("Se ha eliminado la instruccion",elim)
         print("")
